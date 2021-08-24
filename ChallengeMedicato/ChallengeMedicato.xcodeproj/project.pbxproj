@@ -23,6 +23,18 @@
 		71A34F3E26D57ADB00733804 /* SimilarShowsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F3726D57ADB00733804 /* SimilarShowsWireFrame.swift */; };
 		71A34F4026D5826000733804 /* PopularShowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A34F3F26D5826000733804 /* PopularShowsViewController.xib */; };
 		71A34F4A26D58CF500733804 /* SimilarShowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A34F4926D58CF500733804 /* SimilarShowsViewController.xib */; };
+		71A34F4C26D58F5A00733804 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F4B26D58F5A00733804 /* Endpoint.swift */; };
+		71A34F4E26D58F7E00733804 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F4D26D58F7E00733804 /* RequestMethod.swift */; };
+		71A34F5026D58F9A00733804 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F4F26D58F9A00733804 /* RequestProtocol.swift */; };
+		71A34F5226D58FC500733804 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F5126D58FC500733804 /* Feed.swift */; };
+		71A34F5626D5912700733804 /* ResponseHandlingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F5526D5912700733804 /* ResponseHandlingError.swift */; };
+		71A34F5826D5914100733804 /* ResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F5726D5914100733804 /* ResponseStatusCode.swift */; };
+		71A34F5A26D5915400733804 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F5926D5915400733804 /* ResponseError.swift */; };
+		71A34F5D26D5921300733804 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F5C26D5921300733804 /* AppEnvironment.swift */; };
+		71A34F5F26D595E700733804 /* RequestErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F5E26D595E700733804 /* RequestErrorDTO.swift */; };
+		71A34F6126D59BA300733804 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F6026D59BA300733804 /* Constants.swift */; };
+		71A34F6326D5A01C00733804 /* PopularDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F6226D5A01C00733804 /* PopularDTO.swift */; };
+		71A34F6526D5BB7100733804 /* SimilarDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F6426D5BB7100733804 /* SimilarDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +56,18 @@
 		71A34F3726D57ADB00733804 /* SimilarShowsWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarShowsWireFrame.swift; sourceTree = "<group>"; };
 		71A34F3F26D5826000733804 /* PopularShowsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularShowsViewController.xib; sourceTree = "<group>"; };
 		71A34F4926D58CF500733804 /* SimilarShowsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimilarShowsViewController.xib; sourceTree = "<group>"; };
+		71A34F4B26D58F5A00733804 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		71A34F4D26D58F7E00733804 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		71A34F4F26D58F9A00733804 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		71A34F5126D58FC500733804 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		71A34F5526D5912700733804 /* ResponseHandlingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandlingError.swift; sourceTree = "<group>"; };
+		71A34F5726D5914100733804 /* ResponseStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatusCode.swift; sourceTree = "<group>"; };
+		71A34F5926D5915400733804 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		71A34F5C26D5921300733804 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		71A34F5E26D595E700733804 /* RequestErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestErrorDTO.swift; sourceTree = "<group>"; };
+		71A34F6026D59BA300733804 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71A34F6226D5A01C00733804 /* PopularDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDTO.swift; sourceTree = "<group>"; };
+		71A34F6426D5BB7100733804 /* SimilarDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +165,7 @@
 		71A34F1926D575A200733804 /* Parameters */ = {
 			isa = PBXGroup;
 			children = (
+				71A34F6026D59BA300733804 /* Constants.swift */,
 			);
 			path = Parameters;
 			sourceTree = "<group>";
@@ -148,6 +173,9 @@
 		71A34F1A26D575C300733804 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				71A34F5E26D595E700733804 /* RequestErrorDTO.swift */,
+				71A34F6226D5A01C00733804 /* PopularDTO.swift */,
+				71A34F6426D5BB7100733804 /* SimilarDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -155,6 +183,10 @@
 		71A34F1B26D5761400733804 /* NetworkingService */ = {
 			isa = PBXGroup;
 			children = (
+				71A34F5426D590EC00733804 /* Error */,
+				71A34F5326D590E100733804 /* Request */,
+				71A34F4B26D58F5A00733804 /* Endpoint.swift */,
+				71A34F5126D58FC500733804 /* Feed.swift */,
 			);
 			path = NetworkingService;
 			sourceTree = "<group>";
@@ -162,6 +194,7 @@
 		71A34F1C26D576E900733804 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				71A34F5B26D5920600733804 /* Environment */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -289,6 +322,33 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		71A34F5326D590E100733804 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				71A34F4D26D58F7E00733804 /* RequestMethod.swift */,
+				71A34F4F26D58F9A00733804 /* RequestProtocol.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		71A34F5426D590EC00733804 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				71A34F5526D5912700733804 /* ResponseHandlingError.swift */,
+				71A34F5726D5914100733804 /* ResponseStatusCode.swift */,
+				71A34F5926D5915400733804 /* ResponseError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		71A34F5B26D5920600733804 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				71A34F5C26D5921300733804 /* AppEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,14 +421,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				71A34F2A26D57AA700733804 /* PopularShowsInteractorDependencies.swift in Sources */,
+				71A34F6126D59BA300733804 /* Constants.swift in Sources */,
 				71A34F3826D57ADB00733804 /* SimilarShowsInteractorDependencies.swift in Sources */,
 				71A34F2E26D57AA700733804 /* PopularShowsViewController.swift in Sources */,
+				71A34F6326D5A01C00733804 /* PopularDTO.swift in Sources */,
+				71A34F4C26D58F5A00733804 /* Endpoint.swift in Sources */,
+				71A34F4E26D58F7E00733804 /* RequestMethod.swift in Sources */,
+				71A34F5F26D595E700733804 /* RequestErrorDTO.swift in Sources */,
+				71A34F5D26D5921300733804 /* AppEnvironment.swift in Sources */,
 				71A34F0026D5743300733804 /* AppDelegate.swift in Sources */,
 				71A34F2D26D57AA700733804 /* PopularShowsInteractor.swift in Sources */,
 				71A34F2B26D57AA700733804 /* PopularShowsPresenter.swift in Sources */,
 				71A34F0226D5743300733804 /* SceneDelegate.swift in Sources */,
+				71A34F5826D5914100733804 /* ResponseStatusCode.swift in Sources */,
+				71A34F5226D58FC500733804 /* Feed.swift in Sources */,
+				71A34F5026D58F9A00733804 /* RequestProtocol.swift in Sources */,
 				71A34F3C26D57ADB00733804 /* SimilarShowsViewController.swift in Sources */,
 				71A34F3B26D57ADB00733804 /* SimilarShowsInteractor.swift in Sources */,
+				71A34F5626D5912700733804 /* ResponseHandlingError.swift in Sources */,
+				71A34F6526D5BB7100733804 /* SimilarDTO.swift in Sources */,
+				71A34F5A26D5915400733804 /* ResponseError.swift in Sources */,
 				71A34F3026D57AA700733804 /* PopularShowsWireFrame.swift in Sources */,
 				71A34F3926D57ADB00733804 /* SimilarShowsPresenter.swift in Sources */,
 				71A34F3E26D57ADB00733804 /* SimilarShowsWireFrame.swift in Sources */,

@@ -39,6 +39,7 @@ extension Endpoint {
         var url = urlComponents
         url.queryItems = items
         var request = URLRequest(url: url.url!)
+        print(request)
         request.allHTTPHeaderFields = headers
         return request
     }

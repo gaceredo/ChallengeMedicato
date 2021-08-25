@@ -32,6 +32,7 @@ class PopularShowsViewController: UIViewController {
     }
     
     func popularShows() {
+        showHud()
         presenter.popularShows { [weak self] result in
             guard let self = self else {
                 return

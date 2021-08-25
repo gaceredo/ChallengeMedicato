@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimilarShowsViewController" customModule="ChallengeMedicato" customModuleProvider="target">
             <connections>
+                <outlet property="popularDetails" destination="b1O-vh-59U" id="etQ-Mk-K64"/>
+                <outlet property="similarView" destination="rsU-hv-leX" id="W7Y-6d-2Ni"/>
                 <outlet property="view" destination="iN0-l3-epB" id="aST-0y-FuA"/>
             </connections>
         </placeholder>
@@ -17,14 +19,49 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="c3i-Zm-N38">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1O-vh-59U" customClass="PopularDetailsView" customModule="ChallengeMedicato" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsU-hv-leX" customClass="SimilarShowView" customModule="ChallengeMedicato" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="588" width="414" height="230"/>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="230" id="aKb-fY-XCo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rsU-hv-leX" secondAttribute="trailing" id="4Uq-Nb-8oj"/>
+                        <constraint firstItem="rsU-hv-leX" firstAttribute="top" secondItem="b1O-vh-59U" secondAttribute="bottom" constant="9" id="NNC-3R-puJ"/>
+                        <constraint firstItem="b1O-vh-59U" firstAttribute="top" secondItem="c3i-Zm-N38" secondAttribute="top" id="Ws9-A8-YeS"/>
+                        <constraint firstItem="rsU-hv-leX" firstAttribute="leading" secondItem="c3i-Zm-N38" secondAttribute="leading" id="e4r-GZ-G9I"/>
+                        <constraint firstAttribute="trailing" secondItem="b1O-vh-59U" secondAttribute="trailing" id="nRq-lA-UXA"/>
+                        <constraint firstItem="b1O-vh-59U" firstAttribute="leading" secondItem="c3i-Zm-N38" secondAttribute="leading" id="uiw-g0-G0J"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="adx-jq-ctC"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="62" y="70"/>
+            <constraints>
+                <constraint firstItem="c3i-Zm-N38" firstAttribute="trailing" secondItem="adx-jq-ctC" secondAttribute="trailing" id="2m6-bu-umt"/>
+                <constraint firstItem="c3i-Zm-N38" firstAttribute="leading" secondItem="adx-jq-ctC" secondAttribute="leading" id="LrY-cW-HBw"/>
+                <constraint firstItem="adx-jq-ctC" firstAttribute="bottom" secondItem="c3i-Zm-N38" secondAttribute="bottom" id="coh-65-OV7"/>
+                <constraint firstItem="c3i-Zm-N38" firstAttribute="top" secondItem="adx-jq-ctC" secondAttribute="top" id="mry-hM-QiG"/>
+            </constraints>
+            <point key="canvasLocation" x="60.869565217391312" y="69.642857142857139"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

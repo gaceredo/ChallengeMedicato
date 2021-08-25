@@ -6,16 +6,14 @@
 //  
 //
 
-
 import UIKit
 
-protocol PopularShowsViewProtocol {
+class PopularShowsViewController: UIViewController {
     
-}
-
-class PopularShowsViewController: UIViewController, PopularShowsViewProtocol {
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var zeroResult: ZeroResultView!
     
-    private var presenter: PopularShowsPresenter
+    var presenter: PopularShowsPresenter
     
     init(presenter: PopularShowsPresenter) {
         self.presenter = presenter
@@ -28,8 +26,41 @@ class PopularShowsViewController: UIViewController, PopularShowsViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.popularShows(completion:  {
-            
-        })
+        setupTitle()
+        setupTableView()
+        popularShows()
+    }
+    
+    func popularShows() {
+        presenter.popularShows { [weak self] result in
+            guard let self = self else {
+                return
+            }
+            self.hideHud()
+            switch result {
+            case .success:
+                self.finishLoading()
+            case .failure:
+                self.showErrorHud()
+            }
+        }
+    }
+    
+    private func setupTitle() {
+        self.title = Localizable.PopularShows.title.localized
+    }
+    
+    private func setupTableView() {
+        tableView.hideFooterView()
+        tableView.registerNib(PopularShowsTableViewCell.self)
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    private func finishLoading() {
+        tableView.isHidden = presenter.popularResult.isEmpty
+        zeroResult.isHidden = !presenter.popularResult.isEmpty
+        tableView.reloadData()
     }
 }
+

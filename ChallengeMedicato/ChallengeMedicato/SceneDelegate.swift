@@ -17,7 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let contentView = PopularShowsWireFrame.makePopularShowsView()
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = contentView
+        let navigationController = UINavigationController(rootViewController: contentView)
+        window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()
     }

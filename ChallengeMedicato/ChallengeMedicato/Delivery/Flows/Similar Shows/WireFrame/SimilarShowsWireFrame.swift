@@ -10,17 +10,22 @@
 import UIKit
 
 protocol SimilarShowsWireFrameProtocol {
-   static func makeSimilarShowsView(tv id: Int) -> UIViewController
+    func makeSimilarShowsView(tv id: Int)
 }
 
 struct SimilarShowsWireFrame: SimilarShowsWireFrameProtocol {
     
-    static func makeSimilarShowsView(tv id: Int) -> UIViewController {
+    let navigationController: UINavigationController
+    
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
+    func makeSimilarShowsView(tv id: Int) {
         let interactorDependencies = SimilarShowsInteractorDependencies()
         let interactor = SimilarShowsInteractor(dependencies: interactorDependencies)
         let presenter = SimilarShowsPresenter(interactor: interactor, tvId: id)
         let view = SimilarShowsViewController(presenter: presenter)
-        
-        return view
+        self.navigationController.pushViewController(view, animated: true)
     }
 }

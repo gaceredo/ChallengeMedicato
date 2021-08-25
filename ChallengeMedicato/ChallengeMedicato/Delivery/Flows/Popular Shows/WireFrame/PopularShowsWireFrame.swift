@@ -14,6 +14,7 @@ protocol PopularShowsWireFrameProtocol {
 }
 
 struct PopularShowsWireFrame: PopularShowsWireFrameProtocol {
+    var navigationController: UINavigationController?
     
     static func makePopularShowsView() -> UIViewController {
         let interactorDependencies = PopularShowsInteractorDependencies()

@@ -12,22 +12,31 @@ import Combine
 
 protocol PopularShowsPresenterProtocol {
     var popularItems: PopularDTO? { get set }
-    func popularShows(completion: @escaping () -> Void)
+    var popularResult: [PopularResultDTO] { get set }
+    func popularShows(completion: @escaping (Result<Void, Error>) -> Void)
 }
 
 final class PopularShowsPresenter: PopularShowsPresenterProtocol, ObservableObject {
     
-    @Published var popularItems: PopularDTO?
+   var popularItems: PopularDTO? {
+        didSet {
+            popularResult.append(contentsOf: popularItems?.results ?? [])
+        }
+    }
+    
+    @Published var popularResult: [PopularResultDTO] = []
+    
     private let interactor: PopularShowsInteractorProtocol
+    var page: Int = 1
     
     init( interactor: PopularShowsInteractorProtocol) {
         self.interactor = interactor
     }
     
-    func popularShows(completion: @escaping () -> Void) {
+    func popularShows(completion: @escaping (Result<Void, Error>) -> Void) {
         
         let query = [URLQueryItem(name: Keys.apiKey, value: Constants.apiKey),
-                     URLQueryItem(name: Keys.page, value: "1")]
+                     URLQueryItem(name: Keys.page, value: "\(page)")]
         
         interactor.popularShows(query: query) { [weak self] result in
             guard let self = self else {
@@ -36,8 +45,9 @@ final class PopularShowsPresenter: PopularShowsPresenterProtocol, ObservableObje
             switch result {
             case .success(let element):
                 self.popularItems = element
+                completion(.success(()))
             case .failure(let error):
-                print(error)
+                completion(.failure(error))
             }
         }
     }

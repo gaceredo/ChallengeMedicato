@@ -3,10 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7151103126D673C40015A7CC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103026D673C40015A7CC /* ReusableView.swift */; };
+		7151103326D673E50015A7CC /* UIViewController+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103226D673E50015A7CC /* UIViewController+HUD.swift */; };
+		7151103526D6740A0015A7CC /* UITableViewCell+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103426D6740A0015A7CC /* UITableViewCell+Register.swift */; };
+		7151103726D6742E0015A7CC /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103626D6742E0015A7CC /* UITableView+Extension.swift */; };
+		7151103926D674DF0015A7CC /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103826D674DF0015A7CC /* ConfigurableCell.swift */; };
+		7151103B26D674F10015A7CC /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103A26D674F10015A7CC /* ReusableCell.swift */; };
+		7151103E26D675B00015A7CC /* ZeroResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103D26D675B00015A7CC /* ZeroResultView.swift */; };
+		7151104026D675C60015A7CC /* ZeroResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7151103F26D675C60015A7CC /* ZeroResultView.xib */; };
+		7151104326D677020015A7CC /* PopularShowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151104126D677020015A7CC /* PopularShowsTableViewCell.swift */; };
+		7151104426D677020015A7CC /* PopularShowsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7151104226D677020015A7CC /* PopularShowsTableViewCell.xib */; };
+		7151104726D686FA0015A7CC /* UIFont+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151104626D686FA0015A7CC /* UIFont+Add.swift */; };
+		7151104A26D68C310015A7CC /* UIImageView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151104926D68C310015A7CC /* UIImageView+Style.swift */; };
+		7151104F26D6A9F00015A7CC /* PopularShowsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151104E26D6A9F00015A7CC /* PopularShowsViewController+TableView.swift */; };
+		7151105126D6AB400015A7CC /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151105026D6AB400015A7CC /* Localizable.swift */; };
+		7151105426D6AB910015A7CC /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151105326D6AB910015A7CC /* LocalizableString.swift */; };
+		7151105626D6ABB10015A7CC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7151105526D6ABB10015A7CC /* Localizable.strings */; };
 		71A34F0026D5743300733804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34EFF26D5743300733804 /* AppDelegate.swift */; };
 		71A34F0226D5743300733804 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F0126D5743300733804 /* SceneDelegate.swift */; };
 		71A34F0926D5743600733804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A34F0826D5743600733804 /* Assets.xcassets */; };
@@ -35,9 +51,27 @@
 		71A34F6126D59BA300733804 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F6026D59BA300733804 /* Constants.swift */; };
 		71A34F6326D5A01C00733804 /* PopularDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F6226D5A01C00733804 /* PopularDTO.swift */; };
 		71A34F6526D5BB7100733804 /* SimilarDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F6426D5BB7100733804 /* SimilarDTO.swift */; };
+		FFE1411B8EA38C4A304D5973 /* Pods_ChallengeMedicato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ED1F6D7DC615F742C4D1B4 /* Pods_ChallengeMedicato.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		033BAB1FDB612AA6279E3D24 /* Pods-ChallengeMedicato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMedicato.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMedicato/Pods-ChallengeMedicato.release.xcconfig"; sourceTree = "<group>"; };
+		7151103026D673C40015A7CC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		7151103226D673E50015A7CC /* UIViewController+HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HUD.swift"; sourceTree = "<group>"; };
+		7151103426D6740A0015A7CC /* UITableViewCell+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Register.swift"; sourceTree = "<group>"; };
+		7151103626D6742E0015A7CC /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		7151103826D674DF0015A7CC /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		7151103A26D674F10015A7CC /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		7151103D26D675B00015A7CC /* ZeroResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroResultView.swift; sourceTree = "<group>"; };
+		7151103F26D675C60015A7CC /* ZeroResultView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZeroResultView.xib; sourceTree = "<group>"; };
+		7151104126D677020015A7CC /* PopularShowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularShowsTableViewCell.swift; sourceTree = "<group>"; };
+		7151104226D677020015A7CC /* PopularShowsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularShowsTableViewCell.xib; sourceTree = "<group>"; };
+		7151104626D686FA0015A7CC /* UIFont+Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Add.swift"; sourceTree = "<group>"; };
+		7151104926D68C310015A7CC /* UIImageView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Style.swift"; sourceTree = "<group>"; };
+		7151104E26D6A9F00015A7CC /* PopularShowsViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PopularShowsViewController+TableView.swift"; sourceTree = "<group>"; };
+		7151105026D6AB400015A7CC /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		7151105326D6AB910015A7CC /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
+		7151105526D6ABB10015A7CC /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		71A34EFC26D5743300733804 /* ChallengeMedicato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMedicato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A34EFF26D5743300733804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A34F0126D5743300733804 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +102,8 @@
 		71A34F6026D59BA300733804 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71A34F6226D5A01C00733804 /* PopularDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDTO.swift; sourceTree = "<group>"; };
 		71A34F6426D5BB7100733804 /* SimilarDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarDTO.swift; sourceTree = "<group>"; };
+		A5ED1F6D7DC615F742C4D1B4 /* Pods_ChallengeMedicato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMedicato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC5268814ACF077C7B839A8 /* Pods-ChallengeMedicato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMedicato.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeMedicato/Pods-ChallengeMedicato.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +111,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE1411B8EA38C4A304D5973 /* Pods_ChallengeMedicato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7151103C26D675A00015A7CC /* ZeroResult */ = {
+			isa = PBXGroup;
+			children = (
+				7151103D26D675B00015A7CC /* ZeroResultView.swift */,
+				7151103F26D675C60015A7CC /* ZeroResultView.xib */,
+			);
+			path = ZeroResult;
+			sourceTree = "<group>";
+		};
+		7151104526D686DC0015A7CC /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				7151104626D686FA0015A7CC /* UIFont+Add.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		7151104826D68C230015A7CC /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				7151104926D68C310015A7CC /* UIImageView+Style.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		7151105226D6AB800015A7CC /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				7151105026D6AB400015A7CC /* Localizable.swift */,
+				7151105326D6AB910015A7CC /* LocalizableString.swift */,
+				7151105526D6ABB10015A7CC /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 		71A34EF326D5743200733804 = {
 			isa = PBXGroup;
 			children = (
 				71A34EFE26D5743300733804 /* ChallengeMedicato */,
 				71A34EFD26D5743300733804 /* Products */,
+				D80E95C58F592127F54EC7A7 /* Pods */,
+				C052ECAD05D42B445BDC306B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +190,8 @@
 		71A34F1326D574DB00733804 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7151104826D68C230015A7CC /* UIImageView */,
+				7151104526D686DC0015A7CC /* UIFont */,
 				71A34F1426D574E300733804 /* UIView */,
 				71A34F1526D574EF00733804 /* UIViewController */,
 				71A34F1626D5750300733804 /* UITableView */,
@@ -127,6 +203,7 @@
 		71A34F1426D574E300733804 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				7151103026D673C40015A7CC /* ReusableView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -134,6 +211,7 @@
 		71A34F1526D574EF00733804 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7151103226D673E50015A7CC /* UIViewController+HUD.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -141,6 +219,8 @@
 		71A34F1626D5750300733804 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				7151103426D6740A0015A7CC /* UITableViewCell+Register.swift */,
+				7151103626D6742E0015A7CC /* UITableView+Extension.swift */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -148,6 +228,8 @@
 		71A34F1726D5751900733804 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				7151103826D674DF0015A7CC /* ConfigurableCell.swift */,
+				7151103A26D674F10015A7CC /* ReusableCell.swift */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -194,6 +276,7 @@
 		71A34F1C26D576E900733804 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7151105226D6AB800015A7CC /* Localizable */,
 				71A34F5B26D5920600733804 /* Environment */,
 			);
 			path = Core;
@@ -211,6 +294,7 @@
 		71A34F1E26D5774200733804 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				7151103C26D675A00015A7CC /* ZeroResult */,
 				71A34F2026D577F500733804 /* TableViewCell */,
 			);
 			path = UIComponent;
@@ -228,6 +312,8 @@
 		71A34F2026D577F500733804 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				7151104126D677020015A7CC /* PopularShowsTableViewCell.swift */,
+				7151104226D677020015A7CC /* PopularShowsTableViewCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -276,6 +362,7 @@
 			children = (
 				71A34F3F26D5826000733804 /* PopularShowsViewController.xib */,
 				71A34F2726D57AA700733804 /* PopularShowsViewController.swift */,
+				7151104E26D6A9F00015A7CC /* PopularShowsViewController+TableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -349,6 +436,23 @@
 			path = Environment;
 			sourceTree = "<group>";
 		};
+		C052ECAD05D42B445BDC306B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5ED1F6D7DC615F742C4D1B4 /* Pods_ChallengeMedicato.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D80E95C58F592127F54EC7A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5268814ACF077C7B839A8 /* Pods-ChallengeMedicato.debug.xcconfig */,
+				033BAB1FDB612AA6279E3D24 /* Pods-ChallengeMedicato.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,9 +460,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71A34F1026D5743600733804 /* Build configuration list for PBXNativeTarget "ChallengeMedicato" */;
 			buildPhases = (
+				44E785D59BEB4D1AA3F47B3D /* [CP] Check Pods Manifest.lock */,
 				71A34EF826D5743300733804 /* Sources */,
 				71A34EF926D5743300733804 /* Frameworks */,
 				71A34EFA26D5743300733804 /* Resources */,
+				B005EDB63CA9E1628E9718F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,14 +512,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7151104026D675C60015A7CC /* ZeroResultView.xib in Resources */,
 				71A34F0C26D5743600733804 /* LaunchScreen.storyboard in Resources */,
 				71A34F4026D5826000733804 /* PopularShowsViewController.xib in Resources */,
+				7151105626D6ABB10015A7CC /* Localizable.strings in Resources */,
 				71A34F0926D5743600733804 /* Assets.xcassets in Resources */,
+				7151104426D677020015A7CC /* PopularShowsTableViewCell.xib in Resources */,
 				71A34F4A26D58CF500733804 /* SimilarShowsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44E785D59BEB4D1AA3F47B3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeMedicato-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B005EDB63CA9E1628E9718F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeMedicato/Pods-ChallengeMedicato-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeMedicato/Pods-ChallengeMedicato-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeMedicato/Pods-ChallengeMedicato-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71A34EF826D5743300733804 /* Sources */ = {
@@ -430,19 +581,32 @@
 				71A34F5F26D595E700733804 /* RequestErrorDTO.swift in Sources */,
 				71A34F5D26D5921300733804 /* AppEnvironment.swift in Sources */,
 				71A34F0026D5743300733804 /* AppDelegate.swift in Sources */,
+				7151103326D673E50015A7CC /* UIViewController+HUD.swift in Sources */,
 				71A34F2D26D57AA700733804 /* PopularShowsInteractor.swift in Sources */,
+				7151103126D673C40015A7CC /* ReusableView.swift in Sources */,
 				71A34F2B26D57AA700733804 /* PopularShowsPresenter.swift in Sources */,
+				7151104726D686FA0015A7CC /* UIFont+Add.swift in Sources */,
 				71A34F0226D5743300733804 /* SceneDelegate.swift in Sources */,
+				7151104A26D68C310015A7CC /* UIImageView+Style.swift in Sources */,
 				71A34F5826D5914100733804 /* ResponseStatusCode.swift in Sources */,
 				71A34F5226D58FC500733804 /* Feed.swift in Sources */,
 				71A34F5026D58F9A00733804 /* RequestProtocol.swift in Sources */,
 				71A34F3C26D57ADB00733804 /* SimilarShowsViewController.swift in Sources */,
 				71A34F3B26D57ADB00733804 /* SimilarShowsInteractor.swift in Sources */,
+				7151104326D677020015A7CC /* PopularShowsTableViewCell.swift in Sources */,
+				7151103B26D674F10015A7CC /* ReusableCell.swift in Sources */,
 				71A34F5626D5912700733804 /* ResponseHandlingError.swift in Sources */,
+				7151105426D6AB910015A7CC /* LocalizableString.swift in Sources */,
 				71A34F6526D5BB7100733804 /* SimilarDTO.swift in Sources */,
 				71A34F5A26D5915400733804 /* ResponseError.swift in Sources */,
+				7151103E26D675B00015A7CC /* ZeroResultView.swift in Sources */,
+				7151103726D6742E0015A7CC /* UITableView+Extension.swift in Sources */,
+				7151103926D674DF0015A7CC /* ConfigurableCell.swift in Sources */,
+				7151103526D6740A0015A7CC /* UITableViewCell+Register.swift in Sources */,
+				7151104F26D6A9F00015A7CC /* PopularShowsViewController+TableView.swift in Sources */,
 				71A34F3026D57AA700733804 /* PopularShowsWireFrame.swift in Sources */,
 				71A34F3926D57ADB00733804 /* SimilarShowsPresenter.swift in Sources */,
+				7151105126D6AB400015A7CC /* Localizable.swift in Sources */,
 				71A34F3E26D57ADB00733804 /* SimilarShowsWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +743,7 @@
 		};
 		71A34F1126D5743600733804 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCC5268814ACF077C7B839A8 /* Pods-ChallengeMedicato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -599,6 +764,7 @@
 		};
 		71A34F1226D5743600733804 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033BAB1FDB612AA6279E3D24 /* Pods-ChallengeMedicato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

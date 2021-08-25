@@ -25,7 +25,7 @@ class SimilarShowsInteractorDependencies: RequestProtocol {
         self.init(configuration: .default)
     }
     
-    func similarShows(query: [URLQueryItem],_ feedKind: Feed) -> AnyPublisher< SimilarDTO, Error> {
-        execute(feedKind.request(query: query), decodingType: SimilarDTO.self, retries: 1)
+    func similarShows(query: [URLQueryItem],_ feedKind: Feed) -> AnyPublisher< PopularDTO, Error> {
+        execute(feedKind.request(query: query), decodingType: PopularDTO.self, retries: 1)
     }
 }

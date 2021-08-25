@@ -25,7 +25,7 @@ extension Feed: Endpoint {
     var path: String {
         switch self {
         case .similar(let id):
-            return "tv/\(id)/similar"
+            return "/3/tv/\(id)/similar"
         case .popular:
             return "/3/tv/popular"
         }

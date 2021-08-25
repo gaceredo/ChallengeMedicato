@@ -9,11 +9,10 @@
 
 import UIKit
 
-protocol SimilarShowsViewProtocol {
+class SimilarShowsViewController: UIViewController {
     
-}
-
-class SimilarShowsViewController: UIViewController, SimilarShowsViewProtocol {
+    @IBOutlet weak var popularDetails: PopularDetailsView!
+    @IBOutlet weak var similarView: SimilarShowView!
     
     private var presenter: SimilarShowsPresenter
     
@@ -24,5 +23,44 @@ class SimilarShowsViewController: UIViewController, SimilarShowsViewProtocol {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()        
+        popularDetails.configure(data: presenter.element)
+        configureDelegate()
+        similarShows()
+        
+    }
+    
+    func configureDelegate() {
+        similarView.delegate = self
+    }
+    
+    func similarShows() {
+        showHud()
+        presenter.similarShows { [weak self] result in
+            guard let self = self else { return }
+            self.hideHud()
+            switch result {
+            case .failure:
+                self.showErrorHud()
+            case .success:
+                self.similarView.configure(data: self.presenter.similarItemsResult)
+            }
+        }
+    }
+    
+}
+
+extension SimilarShowsViewController: SimilarShowViewProtocol {
+    
+    func didSelectItemAt(data: PopularResultDTO) {
+        popularDetails.configure(data: data)
+    }
+    
+    func loadNextPage() {
+        presenter.page += 1
+        similarShows()
     }
 }

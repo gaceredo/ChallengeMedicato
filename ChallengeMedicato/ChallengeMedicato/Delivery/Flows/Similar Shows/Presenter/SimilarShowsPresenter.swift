@@ -11,33 +11,45 @@ import Foundation
 import Combine
 
 protocol SimilarShowsPresenterProtocol {
-    var similarItems: SimilarDTO? { get set }
-    var tvId: Int { get }
-    func popularShows(completion: @escaping () -> Void)
+    var similarItems: PopularDTO? { get set }
+    var element: PopularResultDTO { get }
+    func similarShows(completion: @escaping (Result<Void, Error>) -> Void)
 }
 
 final class SimilarShowsPresenter: SimilarShowsPresenterProtocol, ObservableObject {
     
-    @Published var similarItems: SimilarDTO?
-    var tvId: Int
-    private let interactor: SimilarShowsInteractorProtocol
-    
-    init(interactor: SimilarShowsInteractorProtocol, tvId: Int) {
-        self.interactor = interactor
-        self.tvId = tvId
+    var similarItems: PopularDTO? {
+        didSet {
+            similarItemsResult.append(contentsOf: similarItems?.results ?? [])
+        }
     }
     
-    func popularShows(completion: @escaping () -> Void) {
-        
-        interactor.similarShows(query: [], tv: tvId) {  [weak self] result in
+    var similarItemsResult: [PopularResultDTO] = []
+    var element: PopularResultDTO
+    var page: Int = 1
+    
+    private let interactor: SimilarShowsInteractorProtocol
+    
+    init(interactor: SimilarShowsInteractorProtocol, element: PopularResultDTO) {
+        self.interactor = interactor
+        self.element = element
+    }
+    
+    func similarShows(completion: @escaping (Result<Void, Error>) -> Void) {
+
+        let query = [URLQueryItem(name: Keys.apiKey, value: Constants.apiKey),
+                     URLQueryItem(name: Keys.page, value: "\(page)")]
+
+        interactor.similarShows(query: query, tv: element.id) {  [weak self] result in
             guard let self = self else {
                 return
             }
             switch result {
             case .success(let element):
                 self.similarItems = element
+                completion(.success(()))
             case .failure(let error):
-                print(error)
+                completion(.failure(error))
             }
         }
     }

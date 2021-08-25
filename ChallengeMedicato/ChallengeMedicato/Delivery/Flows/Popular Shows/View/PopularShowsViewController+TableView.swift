@@ -22,9 +22,9 @@ extension PopularShowsViewController: UITableViewDelegate, UITableViewDataSource
         tableView.deselectRow(at: indexPath, animated: true)
         
         if let navigationController = self.navigationController {
-            let id = presenter.popularResult[indexPath.row].id
+            let element = presenter.popularResult[indexPath.row]
             let view = SimilarShowsWireFrame(navigationController: navigationController)
-            view.makeSimilarShowsView(tv: id)
+            view.makeSimilarShowsView(popular: element)
         }
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

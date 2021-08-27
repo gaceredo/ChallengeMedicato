@@ -7,3 +7,6 @@
 */
 
 "PopularShows.title" = "Popular TV Shows";
+"PopularShows.tableView" = "popular_tableView";
+"PopularShows.details" = "populate_details";
+"SimilarShows.collectionView" = "similar_collection";

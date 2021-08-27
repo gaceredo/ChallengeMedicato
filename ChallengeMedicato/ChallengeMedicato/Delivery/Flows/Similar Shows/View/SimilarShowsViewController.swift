@@ -30,7 +30,12 @@ class SimilarShowsViewController: UIViewController {
         popularDetails.configure(data: presenter.element)
         configureDelegate()
         similarShows()
-        
+        configureKIF()
+    }
+    
+    func configureKIF() {
+        similarView.accessibilityIdentifier = Localizable.SimilarShows.collectionView.localized
+        similarView.accessibilityLabel = Localizable.SimilarShows.collectionView.localized
     }
     
     func configureDelegate() {

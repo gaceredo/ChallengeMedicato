@@ -12,5 +12,11 @@ enum Localizable {
     enum PopularShows: String, LocalizableString {
         var screen: String { "PopularShows" }
         case title
+        case tableView
+        case details
+    }
+    enum SimilarShows: String, LocalizableString {
+        var screen: String { "SimilarShows" }
+        case collectionView
     }
 }

@@ -4,6 +4,11 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'ChallengeMedicato' do
-pod 'Kingfisher'
- pod 'MBProgressHUD'
+  pod 'Kingfisher'
+  pod 'MBProgressHUD'
+end
+
+target 'KIFTests' do
+  pod 'KIF', :configurations => ['Debug']
+  pod 'KIF/IdentifierTests', :configurations => ['Debug']
 end

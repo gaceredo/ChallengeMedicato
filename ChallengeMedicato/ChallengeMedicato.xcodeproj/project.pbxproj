@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C512EB7EFDE2E0FF2BB4123 /* Pods_KIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17773B1CF4A80DE8CC89AF40 /* Pods_KIFTests.framework */; };
 		7151103126D673C40015A7CC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103026D673C40015A7CC /* ReusableView.swift */; };
 		7151103326D673E50015A7CC /* UIViewController+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103226D673E50015A7CC /* UIViewController+HUD.swift */; };
 		7151103526D6740A0015A7CC /* UITableViewCell+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151103426D6740A0015A7CC /* UITableViewCell+Register.swift */; };
@@ -48,6 +49,13 @@
 		715110AA26D85BEC0015A7CC /* InteractorDependenciesTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715110A926D85BEC0015A7CC /* InteractorDependenciesTestCase.swift */; };
 		715110AD26D85D860015A7CC /* MethodRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715110AC26D85D860015A7CC /* MethodRequestProtocol.swift */; };
 		715110B326D869F20015A7CC /* popularShowsError.json in Resources */ = {isa = PBXBuildFile; fileRef = 715110B226D869F20015A7CC /* popularShowsError.json */; };
+		719766D626D96CC500F06CA7 /* KIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719766D526D96CC500F06CA7 /* KIFTests.swift */; };
+		719766DE26D96CEC00F06CA7 /* KIF+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719766DD26D96CEC00F06CA7 /* KIF+Extension.swift */; };
+		719766E126D96D5400F06CA7 /* BaseUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719766E026D96D5400F06CA7 /* BaseUITest.swift */; };
+		719766E326D96D6200F06CA7 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719766E226D96D6200F06CA7 /* Page.swift */; };
+		719766E826D974D700F06CA7 /* PopulatePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719766E726D974D700F06CA7 /* PopulatePage.swift */; };
+		719766EA26D9753F00F06CA7 /* SimilarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719766E926D9753F00F06CA7 /* SimilarPage.swift */; };
+		719766EC26D976F900F06CA7 /* ChallengeMedicatoUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719766EB26D976F900F06CA7 /* ChallengeMedicatoUITest.swift */; };
 		71A34F0026D5743300733804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34EFF26D5743300733804 /* AppDelegate.swift */; };
 		71A34F0226D5743300733804 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F0126D5743300733804 /* SceneDelegate.swift */; };
 		71A34F0926D5743600733804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A34F0826D5743600733804 /* Assets.xcassets */; };
@@ -86,10 +94,19 @@
 			remoteGlobalIDString = 71A34EFB26D5743300733804;
 			remoteInfo = ChallengeMedicato;
 		};
+		719766D826D96CC500F06CA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A34EF426D5743300733804 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71A34EFB26D5743300733804;
+			remoteInfo = ChallengeMedicato;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		033BAB1FDB612AA6279E3D24 /* Pods-ChallengeMedicato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMedicato.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMedicato/Pods-ChallengeMedicato.release.xcconfig"; sourceTree = "<group>"; };
+		17773B1CF4A80DE8CC89AF40 /* Pods_KIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E7C0CFA38A967FCC4349D0 /* Pods-KIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFTests.debug.xcconfig"; path = "Target Support Files/Pods-KIFTests/Pods-KIFTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7151103026D673C40015A7CC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		7151103226D673E50015A7CC /* UIViewController+HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HUD.swift"; sourceTree = "<group>"; };
 		7151103426D6740A0015A7CC /* UITableViewCell+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Register.swift"; sourceTree = "<group>"; };
@@ -133,6 +150,15 @@
 		715110A926D85BEC0015A7CC /* InteractorDependenciesTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorDependenciesTestCase.swift; sourceTree = "<group>"; };
 		715110AC26D85D860015A7CC /* MethodRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodRequestProtocol.swift; sourceTree = "<group>"; };
 		715110B226D869F20015A7CC /* popularShowsError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = popularShowsError.json; sourceTree = "<group>"; };
+		719766D326D96CC500F06CA7 /* KIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		719766D526D96CC500F06CA7 /* KIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFTests.swift; sourceTree = "<group>"; };
+		719766D726D96CC500F06CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719766DD26D96CEC00F06CA7 /* KIF+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KIF+Extension.swift"; sourceTree = "<group>"; };
+		719766E026D96D5400F06CA7 /* BaseUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITest.swift; sourceTree = "<group>"; };
+		719766E226D96D6200F06CA7 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		719766E726D974D700F06CA7 /* PopulatePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulatePage.swift; sourceTree = "<group>"; };
+		719766E926D9753F00F06CA7 /* SimilarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarPage.swift; sourceTree = "<group>"; };
+		719766EB26D976F900F06CA7 /* ChallengeMedicatoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMedicatoUITest.swift; sourceTree = "<group>"; };
 		71A34EFC26D5743300733804 /* ChallengeMedicato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMedicato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A34EFF26D5743300733804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A34F0126D5743300733804 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +189,7 @@
 		71A34F6026D59BA300733804 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71A34F6226D5A01C00733804 /* PopularDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDTO.swift; sourceTree = "<group>"; };
 		A5ED1F6D7DC615F742C4D1B4 /* Pods_ChallengeMedicato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMedicato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B681EAFA8A94F00CC2C9E56F /* Pods-KIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFTests.release.xcconfig"; path = "Target Support Files/Pods-KIFTests/Pods-KIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCC5268814ACF077C7B839A8 /* Pods-ChallengeMedicato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMedicato.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeMedicato/Pods-ChallengeMedicato.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +198,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		719766D026D96CC500F06CA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C512EB7EFDE2E0FF2BB4123 /* Pods_KIFTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +308,6 @@
 				7151108226D8136B0015A7CC /* Mocks */,
 				715110A426D84A1D0015A7CC /* Actions */,
 				7151108626D813B20015A7CC /* Endpoint */,
-				7151108826D813DA0015A7CC /* Flows */,
 				7151107826D810160015A7CC /* ChallengeMedicatoTests.swift */,
 				7151107A26D810160015A7CC /* Info.plist */,
 			);
@@ -328,13 +362,6 @@
 			path = Endpoint;
 			sourceTree = "<group>";
 		};
-		7151108826D813DA0015A7CC /* Flows */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Flows;
-			sourceTree = "<group>";
-		};
 		7151109A26D837280015A7CC /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,11 +397,43 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		719766D426D96CC500F06CA7 /* KIFTests */ = {
+			isa = PBXGroup;
+			children = (
+				719766EB26D976F900F06CA7 /* ChallengeMedicatoUITest.swift */,
+				719766E426D9707100F06CA7 /* Pages */,
+				719766DF26D96D3F00F06CA7 /* Utils */,
+				719766D526D96CC500F06CA7 /* KIFTests.swift */,
+				719766D726D96CC500F06CA7 /* Info.plist */,
+				719766DD26D96CEC00F06CA7 /* KIF+Extension.swift */,
+			);
+			path = KIFTests;
+			sourceTree = "<group>";
+		};
+		719766DF26D96D3F00F06CA7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				719766E026D96D5400F06CA7 /* BaseUITest.swift */,
+				719766E226D96D6200F06CA7 /* Page.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		719766E426D9707100F06CA7 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				719766E726D974D700F06CA7 /* PopulatePage.swift */,
+				719766E926D9753F00F06CA7 /* SimilarPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		71A34EF326D5743200733804 = {
 			isa = PBXGroup;
 			children = (
 				71A34EFE26D5743300733804 /* ChallengeMedicato */,
 				7151107726D810160015A7CC /* ChallengeMedicatoTests */,
+				719766D426D96CC500F06CA7 /* KIFTests */,
 				71A34EFD26D5743300733804 /* Products */,
 				D80E95C58F592127F54EC7A7 /* Pods */,
 				C052ECAD05D42B445BDC306B /* Frameworks */,
@@ -386,6 +445,7 @@
 			children = (
 				71A34EFC26D5743300733804 /* ChallengeMedicato.app */,
 				7151107626D810160015A7CC /* ChallengeMedicatoTests.xctest */,
+				719766D326D96CC500F06CA7 /* KIFTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -661,6 +721,7 @@
 			isa = PBXGroup;
 			children = (
 				A5ED1F6D7DC615F742C4D1B4 /* Pods_ChallengeMedicato.framework */,
+				17773B1CF4A80DE8CC89AF40 /* Pods_KIFTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -670,6 +731,8 @@
 			children = (
 				CCC5268814ACF077C7B839A8 /* Pods-ChallengeMedicato.debug.xcconfig */,
 				033BAB1FDB612AA6279E3D24 /* Pods-ChallengeMedicato.release.xcconfig */,
+				69E7C0CFA38A967FCC4349D0 /* Pods-KIFTests.debug.xcconfig */,
+				B681EAFA8A94F00CC2C9E56F /* Pods-KIFTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -693,6 +756,26 @@
 			name = ChallengeMedicatoTests;
 			productName = ChallengeMedicatoTests;
 			productReference = 7151107626D810160015A7CC /* ChallengeMedicatoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		719766D226D96CC500F06CA7 /* KIFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 719766DA26D96CC500F06CA7 /* Build configuration list for PBXNativeTarget "KIFTests" */;
+			buildPhases = (
+				059BA15771D253D5B5AEB32F /* [CP] Check Pods Manifest.lock */,
+				719766CF26D96CC500F06CA7 /* Sources */,
+				719766D026D96CC500F06CA7 /* Frameworks */,
+				719766D126D96CC500F06CA7 /* Resources */,
+				54DFF5D82861C82B68AE1FAE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				719766D926D96CC500F06CA7 /* PBXTargetDependency */,
+			);
+			name = KIFTests;
+			productName = KIFTests;
+			productReference = 719766D326D96CC500F06CA7 /* KIFTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		71A34EFB26D5743300733804 /* ChallengeMedicato */ = {
@@ -727,6 +810,10 @@
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 71A34EFB26D5743300733804;
 					};
+					719766D226D96CC500F06CA7 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 71A34EFB26D5743300733804;
+					};
 					71A34EFB26D5743300733804 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -747,6 +834,7 @@
 			targets = (
 				71A34EFB26D5743300733804 /* ChallengeMedicato */,
 				7151107526D810160015A7CC /* ChallengeMedicatoTests */,
+				719766D226D96CC500F06CA7 /* KIFTests */,
 			);
 		};
 /* End PBXProject section */
@@ -758,6 +846,13 @@
 			files = (
 				7151108A26D815FE0015A7CC /* popularShows.json in Resources */,
 				715110B326D869F20015A7CC /* popularShowsError.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		719766D126D96CC500F06CA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +876,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		059BA15771D253D5B5AEB32F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KIFTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		44E785D59BEB4D1AA3F47B3D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,6 +918,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54DFF5D82861C82B68AE1FAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KIFTests/Pods-KIFTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KIFTests/Pods-KIFTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KIFTests/Pods-KIFTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B005EDB63CA9E1628E9718F2 /* [CP] Embed Pods Frameworks */ = {
@@ -842,6 +976,20 @@
 				7151109626D82B610015A7CC /* PopularShowsInteractorDependenciesMock.swift in Sources */,
 				7151108E26D819A10015A7CC /* BundleTest.swift in Sources */,
 				715110AD26D85D860015A7CC /* MethodRequestProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		719766CF26D96CC500F06CA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719766E126D96D5400F06CA7 /* BaseUITest.swift in Sources */,
+				719766E826D974D700F06CA7 /* PopulatePage.swift in Sources */,
+				719766DE26D96CEC00F06CA7 /* KIF+Extension.swift in Sources */,
+				719766E326D96D6200F06CA7 /* Page.swift in Sources */,
+				719766D626D96CC500F06CA7 /* KIFTests.swift in Sources */,
+				719766EA26D9753F00F06CA7 /* SimilarPage.swift in Sources */,
+				719766EC26D976F900F06CA7 /* ChallengeMedicatoUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,6 +1049,11 @@
 			target = 71A34EFB26D5743300733804 /* ChallengeMedicato */;
 			targetProxy = 7151107B26D810160015A7CC /* PBXContainerItemProxy */;
 		};
+		719766D926D96CC500F06CA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71A34EFB26D5743300733804 /* ChallengeMedicato */;
+			targetProxy = 719766D826D96CC500F06CA7 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -948,6 +1101,48 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gustavoaceredo.ChallengeMedicatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeMedicato.app/ChallengeMedicato";
+			};
+			name = Release;
+		};
+		719766DB26D96CC500F06CA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E7C0CFA38A967FCC4349D0 /* Pods-KIFTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV289Y8V97;
+				INFOPLIST_FILE = KIFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavoaceredo.KIFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeMedicato.app/ChallengeMedicato";
+			};
+			name = Debug;
+		};
+		719766DC26D96CC500F06CA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B681EAFA8A94F00CC2C9E56F /* Pods-KIFTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV289Y8V97;
+				INFOPLIST_FILE = KIFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavoaceredo.KIFTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1121,6 +1316,15 @@
 			buildConfigurations = (
 				7151107D26D810160015A7CC /* Debug */,
 				7151107E26D810160015A7CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		719766DA26D96CC500F06CA7 /* Build configuration list for PBXNativeTarget "KIFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719766DB26D96CC500F06CA7 /* Debug */,
+				719766DC26D96CC500F06CA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

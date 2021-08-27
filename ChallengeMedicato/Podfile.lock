@@ -1,20 +1,29 @@
 PODS:
+  - KIF (3.8.2):
+    - KIF/Core (= 3.8.2)
+  - KIF/Core (3.8.2)
+  - KIF/IdentifierTests (3.8.2):
+    - KIF/Core
   - Kingfisher (6.3.1)
   - MBProgressHUD (1.2.0)
 
 DEPENDENCIES:
+  - KIF
+  - KIF/IdentifierTests
   - Kingfisher
   - MBProgressHUD
 
 SPEC REPOS:
   trunk:
+    - KIF
     - Kingfisher
     - MBProgressHUD
 
 SPEC CHECKSUMS:
+  KIF: 046e792c00c407316df8a70941851decc877b124
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
-PODFILE CHECKSUM: 1b3c7679f91afedd59e6855f762575b54a0efd2a
+PODFILE CHECKSUM: 01b5c2a3d91b6764b3b1e23307f041b81be30500
 
 COCOAPODS: 1.10.1

@@ -29,6 +29,12 @@ class PopularShowsViewController: UIViewController {
         setupTitle()
         setupTableView()
         popularShows()
+        configureKIF()
+    }
+    
+    func configureKIF() {
+        tableView.accessibilityIdentifier = Localizable.PopularShows.tableView.localized
+        tableView.accessibilityLabel = Localizable.PopularShows.tableView.localized
     }
     
     func popularShows() {

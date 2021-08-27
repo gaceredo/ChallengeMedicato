@@ -20,6 +20,7 @@ class PopularDetailsView: ReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupTableViewCell()
+        configureKIF()
     }
     private func setupTableViewCell() {
         popularDetailsTitle.font = .helveticaNeueBold(size: 16)
@@ -29,6 +30,10 @@ class PopularDetailsView: ReusableView {
         popularDetailsImage.makeRoundCorners(byRadius: 16)
     }
     
+    func configureKIF() {
+        accessibilityIdentifier = Localizable.PopularShows.details.localized
+        accessibilityLabel = Localizable.PopularShows.details.localized
+    }
     func configure(data: PopularResultDTO) {
         
         popularDetailsTitle.text = data.name

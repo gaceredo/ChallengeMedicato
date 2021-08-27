@@ -31,6 +31,23 @@
 		7151106626D6DA370015A7CC /* SimilarShowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7151106426D6DA370015A7CC /* SimilarShowCollectionViewCell.xib */; };
 		7151106926D6DDC80015A7CC /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151106826D6DDC80015A7CC /* UICollectionView+Register.swift */; };
 		7151106B26D6FD3F0015A7CC /* SimilarShowView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151106A26D6FD3F0015A7CC /* SimilarShowView+Delegate.swift */; };
+		7151107926D810160015A7CC /* ChallengeMedicatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151107826D810160015A7CC /* ChallengeMedicatoTests.swift */; };
+		7151108A26D815FE0015A7CC /* popularShows.json in Resources */ = {isa = PBXBuildFile; fileRef = 7151108926D815FE0015A7CC /* popularShows.json */; };
+		7151108C26D816660015A7CC /* CreatePopularShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151108B26D816660015A7CC /* CreatePopularShow.swift */; };
+		7151108E26D819A10015A7CC /* BundleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151108D26D819A10015A7CC /* BundleTest.swift */; };
+		7151109026D81BDB0015A7CC /* SimilarShowsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151108F26D81BDB0015A7CC /* SimilarShowsInteractorMock.swift */; };
+		7151109226D81C9F0015A7CC /* PopularShowsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151109126D81C9F0015A7CC /* PopularShowsInteractorMock.swift */; };
+		7151109426D822090015A7CC /* SimilarShowsInteractorDependenciesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151109326D822090015A7CC /* SimilarShowsInteractorDependenciesMock.swift */; };
+		7151109626D82B610015A7CC /* PopularShowsInteractorDependenciesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151109526D82B610015A7CC /* PopularShowsInteractorDependenciesMock.swift */; };
+		7151109C26D837390015A7CC /* PopularShowsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151109B26D837390015A7CC /* PopularShowsPresenterMock.swift */; };
+		7151109E26D838260015A7CC /* SimilarShowsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151109D26D838260015A7CC /* SimilarShowsPresenterMock.swift */; };
+		715110A026D83A500015A7CC /* MethodEndpointTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151109F26D83A500015A7CC /* MethodEndpointTestCase.swift */; };
+		715110A226D83CA00015A7CC /* MethodEndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715110A126D83CA00015A7CC /* MethodEndpointMock.swift */; };
+		715110A626D84B0C0015A7CC /* PresenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715110A526D84B0C0015A7CC /* PresenterTestCase.swift */; };
+		715110A826D852510015A7CC /* InteractorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715110A726D852510015A7CC /* InteractorTestCase.swift */; };
+		715110AA26D85BEC0015A7CC /* InteractorDependenciesTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715110A926D85BEC0015A7CC /* InteractorDependenciesTestCase.swift */; };
+		715110AD26D85D860015A7CC /* MethodRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715110AC26D85D860015A7CC /* MethodRequestProtocol.swift */; };
+		715110B326D869F20015A7CC /* popularShowsError.json in Resources */ = {isa = PBXBuildFile; fileRef = 715110B226D869F20015A7CC /* popularShowsError.json */; };
 		71A34F0026D5743300733804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34EFF26D5743300733804 /* AppDelegate.swift */; };
 		71A34F0226D5743300733804 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A34F0126D5743300733804 /* SceneDelegate.swift */; };
 		71A34F0926D5743600733804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A34F0826D5743600733804 /* Assets.xcassets */; };
@@ -61,6 +78,16 @@
 		FFE1411B8EA38C4A304D5973 /* Pods_ChallengeMedicato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ED1F6D7DC615F742C4D1B4 /* Pods_ChallengeMedicato.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7151107B26D810160015A7CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71A34EF426D5743300733804 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71A34EFB26D5743300733804;
+			remoteInfo = ChallengeMedicato;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		033BAB1FDB612AA6279E3D24 /* Pods-ChallengeMedicato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMedicato.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMedicato/Pods-ChallengeMedicato.release.xcconfig"; sourceTree = "<group>"; };
 		7151103026D673C40015A7CC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
@@ -87,6 +114,25 @@
 		7151106426D6DA370015A7CC /* SimilarShowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimilarShowCollectionViewCell.xib; sourceTree = "<group>"; };
 		7151106826D6DDC80015A7CC /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
 		7151106A26D6FD3F0015A7CC /* SimilarShowView+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimilarShowView+Delegate.swift"; sourceTree = "<group>"; };
+		7151107626D810160015A7CC /* ChallengeMedicatoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMedicatoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7151107826D810160015A7CC /* ChallengeMedicatoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMedicatoTests.swift; sourceTree = "<group>"; };
+		7151107A26D810160015A7CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7151108926D815FE0015A7CC /* popularShows.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = popularShows.json; sourceTree = "<group>"; };
+		7151108B26D816660015A7CC /* CreatePopularShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePopularShow.swift; sourceTree = "<group>"; };
+		7151108D26D819A10015A7CC /* BundleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTest.swift; sourceTree = "<group>"; };
+		7151108F26D81BDB0015A7CC /* SimilarShowsInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarShowsInteractorMock.swift; sourceTree = "<group>"; };
+		7151109126D81C9F0015A7CC /* PopularShowsInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularShowsInteractorMock.swift; sourceTree = "<group>"; };
+		7151109326D822090015A7CC /* SimilarShowsInteractorDependenciesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarShowsInteractorDependenciesMock.swift; sourceTree = "<group>"; };
+		7151109526D82B610015A7CC /* PopularShowsInteractorDependenciesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularShowsInteractorDependenciesMock.swift; sourceTree = "<group>"; };
+		7151109B26D837390015A7CC /* PopularShowsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularShowsPresenterMock.swift; sourceTree = "<group>"; };
+		7151109D26D838260015A7CC /* SimilarShowsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarShowsPresenterMock.swift; sourceTree = "<group>"; };
+		7151109F26D83A500015A7CC /* MethodEndpointTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodEndpointTestCase.swift; sourceTree = "<group>"; };
+		715110A126D83CA00015A7CC /* MethodEndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodEndpointMock.swift; sourceTree = "<group>"; };
+		715110A526D84B0C0015A7CC /* PresenterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTestCase.swift; sourceTree = "<group>"; };
+		715110A726D852510015A7CC /* InteractorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorTestCase.swift; sourceTree = "<group>"; };
+		715110A926D85BEC0015A7CC /* InteractorDependenciesTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorDependenciesTestCase.swift; sourceTree = "<group>"; };
+		715110AC26D85D860015A7CC /* MethodRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodRequestProtocol.swift; sourceTree = "<group>"; };
+		715110B226D869F20015A7CC /* popularShowsError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = popularShowsError.json; sourceTree = "<group>"; };
 		71A34EFC26D5743300733804 /* ChallengeMedicato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMedicato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A34EFF26D5743300733804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A34F0126D5743300733804 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +167,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7151107326D810160015A7CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71A34EF926D5743300733804 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,10 +265,116 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		7151107726D810160015A7CC /* ChallengeMedicatoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7151108026D813480015A7CC /* Utilities */,
+				7151108126D8135B0015A7CC /* Resources */,
+				7151108226D8136B0015A7CC /* Mocks */,
+				715110A426D84A1D0015A7CC /* Actions */,
+				7151108626D813B20015A7CC /* Endpoint */,
+				7151108826D813DA0015A7CC /* Flows */,
+				7151107826D810160015A7CC /* ChallengeMedicatoTests.swift */,
+				7151107A26D810160015A7CC /* Info.plist */,
+			);
+			path = ChallengeMedicatoTests;
+			sourceTree = "<group>";
+		};
+		7151108026D813480015A7CC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7151108B26D816660015A7CC /* CreatePopularShow.swift */,
+				7151108D26D819A10015A7CC /* BundleTest.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7151108126D8135B0015A7CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7151108926D815FE0015A7CC /* popularShows.json */,
+				715110B226D869F20015A7CC /* popularShowsError.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7151108226D8136B0015A7CC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				715110AB26D85D770015A7CC /* Service */,
+				715110A326D83CB70015A7CC /* EndPoint */,
+				7151109A26D837280015A7CC /* Presenter */,
+				7151108326D8138E0015A7CC /* Interactors */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		7151108326D8138E0015A7CC /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				7151108F26D81BDB0015A7CC /* SimilarShowsInteractorMock.swift */,
+				7151109126D81C9F0015A7CC /* PopularShowsInteractorMock.swift */,
+				7151109326D822090015A7CC /* SimilarShowsInteractorDependenciesMock.swift */,
+				7151109526D82B610015A7CC /* PopularShowsInteractorDependenciesMock.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		7151108626D813B20015A7CC /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				7151109F26D83A500015A7CC /* MethodEndpointTestCase.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		7151108826D813DA0015A7CC /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		7151109A26D837280015A7CC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7151109B26D837390015A7CC /* PopularShowsPresenterMock.swift */,
+				7151109D26D838260015A7CC /* SimilarShowsPresenterMock.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		715110A326D83CB70015A7CC /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				715110A126D83CA00015A7CC /* MethodEndpointMock.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		715110A426D84A1D0015A7CC /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				715110A526D84B0C0015A7CC /* PresenterTestCase.swift */,
+				715110A726D852510015A7CC /* InteractorTestCase.swift */,
+				715110A926D85BEC0015A7CC /* InteractorDependenciesTestCase.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		715110AB26D85D770015A7CC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				715110AC26D85D860015A7CC /* MethodRequestProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		71A34EF326D5743200733804 = {
 			isa = PBXGroup;
 			children = (
 				71A34EFE26D5743300733804 /* ChallengeMedicato */,
+				7151107726D810160015A7CC /* ChallengeMedicatoTests */,
 				71A34EFD26D5743300733804 /* Products */,
 				D80E95C58F592127F54EC7A7 /* Pods */,
 				C052ECAD05D42B445BDC306B /* Frameworks */,
@@ -226,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				71A34EFC26D5743300733804 /* ChallengeMedicato.app */,
+				7151107626D810160015A7CC /* ChallengeMedicatoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -517,6 +677,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7151107526D810160015A7CC /* ChallengeMedicatoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7151107F26D810160015A7CC /* Build configuration list for PBXNativeTarget "ChallengeMedicatoTests" */;
+			buildPhases = (
+				7151107226D810160015A7CC /* Sources */,
+				7151107326D810160015A7CC /* Frameworks */,
+				7151107426D810160015A7CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7151107C26D810160015A7CC /* PBXTargetDependency */,
+			);
+			name = ChallengeMedicatoTests;
+			productName = ChallengeMedicatoTests;
+			productReference = 7151107626D810160015A7CC /* ChallengeMedicatoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		71A34EFB26D5743300733804 /* ChallengeMedicato */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71A34F1026D5743600733804 /* Build configuration list for PBXNativeTarget "ChallengeMedicato" */;
@@ -545,6 +723,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					7151107526D810160015A7CC = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 71A34EFB26D5743300733804;
+					};
 					71A34EFB26D5743300733804 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -564,11 +746,21 @@
 			projectRoot = "";
 			targets = (
 				71A34EFB26D5743300733804 /* ChallengeMedicato */,
+				7151107526D810160015A7CC /* ChallengeMedicatoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7151107426D810160015A7CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7151108A26D815FE0015A7CC /* popularShows.json in Resources */,
+				715110B326D869F20015A7CC /* popularShowsError.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71A34EFA26D5743300733804 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,6 +823,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7151107226D810160015A7CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7151109426D822090015A7CC /* SimilarShowsInteractorDependenciesMock.swift in Sources */,
+				7151108C26D816660015A7CC /* CreatePopularShow.swift in Sources */,
+				7151107926D810160015A7CC /* ChallengeMedicatoTests.swift in Sources */,
+				715110A226D83CA00015A7CC /* MethodEndpointMock.swift in Sources */,
+				7151109C26D837390015A7CC /* PopularShowsPresenterMock.swift in Sources */,
+				7151109226D81C9F0015A7CC /* PopularShowsInteractorMock.swift in Sources */,
+				7151109E26D838260015A7CC /* SimilarShowsPresenterMock.swift in Sources */,
+				715110A026D83A500015A7CC /* MethodEndpointTestCase.swift in Sources */,
+				715110A826D852510015A7CC /* InteractorTestCase.swift in Sources */,
+				715110AA26D85BEC0015A7CC /* InteractorDependenciesTestCase.swift in Sources */,
+				7151109026D81BDB0015A7CC /* SimilarShowsInteractorMock.swift in Sources */,
+				715110A626D84B0C0015A7CC /* PresenterTestCase.swift in Sources */,
+				7151109626D82B610015A7CC /* PopularShowsInteractorDependenciesMock.swift in Sources */,
+				7151108E26D819A10015A7CC /* BundleTest.swift in Sources */,
+				715110AD26D85D860015A7CC /* MethodRequestProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71A34EF826D5743300733804 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -681,6 +895,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7151107C26D810160015A7CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71A34EFB26D5743300733804 /* ChallengeMedicato */;
+			targetProxy = 7151107B26D810160015A7CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		71A34F0A26D5743600733804 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -693,6 +915,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7151107D26D810160015A7CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV289Y8V97;
+				INFOPLIST_FILE = ChallengeMedicatoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavoaceredo.ChallengeMedicatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeMedicato.app/ChallengeMedicato";
+			};
+			name = Debug;
+		};
+		7151107E26D810160015A7CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV289Y8V97;
+				INFOPLIST_FILE = ChallengeMedicatoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gustavoaceredo.ChallengeMedicatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeMedicato.app/ChallengeMedicato";
+			};
+			name = Release;
+		};
 		71A34F0E26D5743600733804 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -854,6 +1116,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7151107F26D810160015A7CC /* Build configuration list for PBXNativeTarget "ChallengeMedicatoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7151107D26D810160015A7CC /* Debug */,
+				7151107E26D810160015A7CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		71A34EF726D5743300733804 /* Build configuration list for PBXProject "ChallengeMedicato" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

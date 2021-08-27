@@ -33,8 +33,8 @@ class PopularDetailsView: ReusableView {
         
         popularDetailsTitle.text = data.name
         popularDetailsDescription.text = data.overview
-        popularDetailsAverage.text = "Puntos: \(data.voteAverage.description)"
-        popularDetailsDate.text = "Estreno: \(data.firstAirDate)"
+        popularDetailsAverage.text = "Average: \(data.voteAverage.description)"
+        popularDetailsDate.text = "Date: \(data.firstAirDate)"
         
         if let path = data.posterPath {
             let url = URL(string: Path.baseImage + path)

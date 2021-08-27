@@ -10,7 +10,11 @@
 import Foundation
 import Combine
 
-class PopularShowsInteractorDependencies: RequestProtocol {
+protocol PopularShowsInteractorDependenciesProtocol {
+    func popularShows(query: [URLQueryItem],_ feedKind: Feed) -> AnyPublisher< PopularDTO, Error>
+}
+
+class PopularShowsInteractorDependencies: RequestProtocol, PopularShowsInteractorDependenciesProtocol {
     
     var session: URLSession
     var error: ResponseHandlingError

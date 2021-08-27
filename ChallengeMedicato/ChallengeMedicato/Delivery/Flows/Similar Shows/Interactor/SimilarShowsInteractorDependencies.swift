@@ -10,7 +10,10 @@
 import Foundation
 import Combine
 
-class SimilarShowsInteractorDependencies: RequestProtocol {
+protocol SimilarShowsInteractorDependenciesProtocol {
+    func similarShows(query: [URLQueryItem],_ feedKind: Feed) -> AnyPublisher< PopularDTO, Error>
+}
+class SimilarShowsInteractorDependencies: RequestProtocol, SimilarShowsInteractorDependenciesProtocol {
     
     var session: URLSession
     var error: ResponseHandlingError
@@ -29,3 +32,4 @@ class SimilarShowsInteractorDependencies: RequestProtocol {
         execute(feedKind.request(query: query), decodingType: PopularDTO.self, retries: 1)
     }
 }
+

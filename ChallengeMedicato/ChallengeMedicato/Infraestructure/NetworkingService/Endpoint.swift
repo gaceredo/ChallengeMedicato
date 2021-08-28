@@ -22,11 +22,7 @@ extension Endpoint {
     }
     
     var base : String {
-        if AppConfig.environment == .Development {
-            return "https://api.themoviedb.org"
-        } else {
-            return "https://api.themoviedb.org"
-        }
+        return AppEnvironment.baseURL
     }
     
     var urlComponents: URLComponents {
